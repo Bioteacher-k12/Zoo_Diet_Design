@@ -1,96 +1,633 @@
-<div style="width: 100%; font-family: Arial, sans-serif; color: #2c3e50; line-height: 1.6; box-sizing: border-box;">
-
-    <!-- Lesson Banner Header -->
-    <div style="background-color: #1b4f72; color: #ffffff; padding: 22px; border-radius: 6px; margin-bottom: 25px; width: 100%; box-sizing: border-box;">
-        <h2 style="margin: 0; color: #ffffff; font-size: 26px; font-weight: bold;">Lesson 27: Animal Nutrition &amp; Zoo Diet Design Menu</h2>
-        <p style="margin: 6px 0 0 0; color: #d4e6f1; font-size: 15px;">Analyzing Dietary Needs &amp; Formulating Biologically Appropriate Diets</p>
-    </div>
-
-    <!-- Target and Success Criteria Component -->
-    <div style="background-color: #eaf2f8; border-left: 6px solid #2980b9; padding: 20px; margin-bottom: 25px; border-radius: 4px; width: 100%; box-sizing: border-box;">
-        <h3 style="margin-top: 0; color: #1b4f72; font-size: 20px;">
-            <img src="https://utva.instructure.com/courses/5952/files/937624/preview" alt="Target Icon" width="69" height="58" style="vertical-align: middle; margin-right: 8px;" data-api-endpoint="https://utva.instructure.com/api/v1/courses/5952/files/937624" data-api-returntype="File" />
-            Today's Target
-        </h3>
-        <p style="font-weight: bold; margin: 5px 0 10px 0; color: #1b4f72;">Guiding Question: How do zoo nutritionists design biologically appropriate diets that satisfy the unique macromolecular needs of different animal species?</p>
-        <ul style="margin: 10px 0 15px 0; padding-left: 20px; color: #2c3e50;">
-            <li>Analyze different dietary needs of animals.</li>
-            <li>Review different nutrients for different foods.</li>
-        </ul>
-        <div style="background-color: #d4efdf; border-left: 4px solid #27ae60; padding: 12px 15px; border-radius: 4px; color: #1e8449;">
-            <strong>Success Criteria:</strong> Design a menu for different species based on their nutritional requirements.
-        </div>
-    </div>
-
-    <!-- Dietary Planning Guidance -->
-    <div style="background-color: #fef9e7; border-left: 6px solid #f1c40f; padding: 20px; margin-bottom: 25px; border-radius: 4px; width: 100%; box-sizing: border-box;">
-        <h3 style="margin-top: 0; color: #7d6608; font-size: 18px;">Dietary Planning: Critical Information</h3>
-        <p style="margin-bottom: 12px; color: #7d6608;">
-            Different species can have very specific needs. When feeding animals, whether at the zoo or your own pet at home, it is vital to provide a diet that is biologically appropriate.
-        </p>
-        <ol style="margin: 5px 0 10px 0; padding-left: 20px; color: #7d6608; line-height: 1.8;">
-            <li>Formulate a biologically appropriate diet that meets or exceeds each species' minimum needs.</li>
-            <li>Each species should be offered a minimum of three (3) food items daily.</li>
-            <li>To calculate the mass of total portion to be fed each day, multiply the portion size by the percentage of each macromolecule category (protein, fat, carbohydrate). Convert percentages to decimals first (e.g., 8.9% = 0.089).</li>
-            <li>If struggling to keep within the recommended range for your species, consider reducing the portion size, which will not have an impact on its macromolecule percentages.</li>
-        </ol>
-    </div>
-
-    <!-- Species Information Cards 2x2 Table -->
-    <h2 style="color: #1b4f72; border-bottom: 2px solid #2980b9; padding-bottom: 6px; margin-top: 30px;">Species Information Cards</h2>
-    <p style="margin-bottom: 15px;">Review the species information cards below for details regarding species requirements:</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Nutrition Lab 2.0</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js for data visualization -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; border: 1px solid #d6dbdf;">
-        <tbody>
-            <tr>
-                <td style="width: 50%; padding: 15px; border: 1px solid #d6dbdf; text-align: center; vertical-align: top; background-color: #ffffff;">
-                    <!-- INSERT AFRICAN LION CARD IMAGE HERE -->
-                    <img src="#" alt="African Lion Species Information Card" style="max-width: 100%; height: auto; border: 1px solid #cccccc; border-radius: 4px;" />
-                    <p style="margin: 8px 0 0 0; font-weight: bold; color: #1b4f72;">African Lion Card</p>
-                </td>
-                <td style="width: 50%; padding: 15px; border: 1px solid #d6dbdf; text-align: center; vertical-align: top; background-color: #ffffff;">
-                    <!-- INSERT GREVY'S ZEBRA CARD IMAGE HERE -->
-                    <img src="#" alt="Grevy's Zebra Species Information Card" style="max-width: 100%; height: auto; border: 1px solid #cccccc; border-radius: 4px;" />
-                    <p style="margin: 8px 0 0 0; font-weight: bold; color: #1b4f72;">Grevy's Zebra Card</p>
-                </td>
-            </tr>
-            <tr>
-                <td style="width: 50%; padding: 15px; border: 1px solid #d6dbdf; text-align: center; vertical-align: top; background-color: #ffffff;">
-                    <!-- INSERT GUINEA BABOON CARD IMAGE HERE -->
-                    <img src="#" alt="Guinea Baboon Species Information Card" style="max-width: 100%; height: auto; border: 1px solid #cccccc; border-radius: 4px;" />
-                    <p style="margin: 8px 0 0 0; font-weight: bold; color: #1b4f72;">Guinea Baboon Card</p>
-                </td>
-                <td style="width: 50%; padding: 15px; border: 1px solid #d6dbdf; text-align: center; vertical-align: top; background-color: #ffffff;">
-                    <!-- INSERT AFRICAN HEDGEHOG CARD IMAGE HERE -->
-                    <img src="#" alt="African Hedgehog Species Information Card" style="max-width: 100%; height: auto; border: 1px solid #cccccc; border-radius: 4px;" />
-                    <p style="margin: 8px 0 0 0; font-weight: bold; color: #1b4f72;">African Hedgehog Card</p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <style>
+        /* Custom scrollbar for the modal */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+        
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 300ms;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans antialiased min-h-screen pb-20">
 
-    <!-- Embedded Interactive Web Application Workspace -->
-    <h2 style="color: #1b4f72; border-bottom: 2px solid #2980b9; padding-bottom: 6px; margin-top: 30px;">Interactive Diet Designer Web Tool</h2>
-    <p style="margin-bottom: 15px;">Use the embedded web application below to select your species, review feedstuff values, and design your daily menu:</p>
+    <!-- Toast Notification System (Replaces Alert) -->
+    <div id="toastMessage" class="fixed top-5 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg shadow-xl text-white font-medium z-50 opacity-0 pointer-events-none transition-all duration-300">
+        Message Text
+    </div>
 
-    <div style="width: 100%; border: 2px solid #2980b9; border-radius: 6px; overflow: hidden; background-color: #ffffff; margin-bottom: 25px; box-sizing: border-box;">
-        <div style="padding: 12px 18px; background-color: #1b4f72; color: #ffffff; font-weight: bold; font-size: 16px;">
-            Zoo Animal Diet Builder Tool
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto px-4 mt-8">
+        
+        <!-- Header -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8 mb-6">
+            <h1 class="text-3xl font-bold text-emerald-800 text-center mb-2">Animal Nutrition Lab</h1>
+            <p class="text-center text-slate-500 mb-6">Design balanced diets and compare macronutrient needs across different species.</p>
+            
+            <!-- Step 1: Animal Selection -->
+            <div class="bg-emerald-50 border-l-4 border-emerald-500 p-5 rounded-r-lg mb-6">
+                <h3 class="text-lg font-semibold text-emerald-900 mb-2">Step 1: Select Your Species</h3>
+                <p class="text-sm text-emerald-700 mb-4">Choose an animal to view its daily minimum macromolecule requirements.</p>
+                <select id="speciesSelect" class="w-full md:w-1/2 p-3 rounded-md border border-emerald-300 focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white shadow-sm transition-all text-slate-700">
+                    <option value="" disabled selected>-- Select an Animal --</option>
+                </select>
+
+                <!-- Target Display -->
+                <div id="targetDisplay" class="hidden mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center border border-slate-200">
+                        <p class="text-sm text-slate-500 uppercase font-semibold">Minimum Protein</p>
+                        <p class="text-2xl font-bold mt-1"><span id="targetProtein" class="text-amber-500">0</span> <span class="text-sm font-normal text-slate-500">kg</span></p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center border border-slate-200">
+                        <p class="text-sm text-slate-500 uppercase font-semibold">Minimum Fat</p>
+                        <p class="text-2xl font-bold mt-1"><span id="targetFat" class="text-amber-500">0</span> <span class="text-sm font-normal text-slate-500">kg</span></p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm text-center border border-slate-200">
+                        <p class="text-sm text-slate-500 uppercase font-semibold">Minimum Carbs</p>
+                        <p class="text-2xl font-bold mt-1"><span id="targetCarbs" class="text-amber-500">0</span> <span class="text-sm font-normal text-slate-500">kg</span></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div style="padding: 10px; text-align: center;">
-            <!-- Replace the iframe src URL below with your actual embedded web application link -->
-            <iframe src="about:blank" title="Zoo Diet Design Application" width="100%" height="650" style="border: none; width: 100%; min-height: 650px;"></iframe>
+
+        <!-- Step 2: Diet Builder -->
+        <div id="dietBuilderSection" class="hidden bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8 mb-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-800">Step 2: Design the Diet</h3>
+                    <p class="text-sm text-slate-500">Add foods and specify the amount (in kg). Meet the animal's minimum requirements!</p>
+                </div>
+                <div class="flex gap-2">
+                    <button onclick="openFoodModal()" class="bg-sky-100 hover:bg-sky-200 text-sky-700 px-4 py-2 rounded-lg font-medium transition-colors border border-sky-300 shadow-sm flex items-center">
+                        <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Food Reference
+                    </button>
+                    <button onclick="saveCurrentDiet()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-lg font-medium transition-colors shadow-sm shadow-emerald-200">
+                        Save Diet
+                    </button>
+                </div>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table id="dietTable" class="w-full text-left border-collapse min-w-[800px]">
+                    <thead>
+                        <tr class="bg-slate-100 border-b border-slate-300 text-slate-700">
+                            <th class="p-3 font-semibold rounded-tl-lg w-1/3">Food Item</th>
+                            <th class="p-3 font-semibold w-1/5">Quantity</th>
+                            <th class="p-3 font-semibold w-[12%] text-center">Protein (kg)</th>
+                            <th class="p-3 font-semibold w-[12%] text-center">Fat (kg)</th>
+                            <th class="p-3 font-semibold w-[12%] text-center">Carbs (kg)</th>
+                            <th class="p-3 font-semibold rounded-tr-lg w-[10%] text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dietBody" class="divide-y divide-slate-200">
+                        <!-- Rows injected dynamically -->
+                    </tbody>
+                    <tfoot class="bg-slate-50 border-t-2 border-slate-300">
+                        <tr>
+                            <td colspan="2" class="p-4 text-right font-bold text-slate-700">TOTALS:</td>
+                            <td class="p-4 text-center font-mono font-bold text-lg"><span id="totalProtein" class="text-amber-500">0.000</span></td>
+                            <td class="p-4 text-center font-mono font-bold text-lg"><span id="totalFat" class="text-amber-500">0.000</span></td>
+                            <td class="p-4 text-center font-mono font-bold text-lg"><span id="totalCarbs" class="text-amber-500">0.000</span></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
+            <button onclick="addFoodRow()" class="mt-4 text-emerald-600 font-medium hover:text-emerald-800 transition-colors flex items-center">
+                <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+                Add Food Item
+            </button>
+        </div>
+
+        <!-- Step 3: Saved Diets & Comparison -->
+        <div id="savedDietsSection" class="hidden bg-white rounded-xl shadow-sm border border-slate-200 p-6 md:p-8">
+            <h3 class="text-xl font-bold text-slate-800 mb-2">Step 3: Comparison Analysis</h3>
+            <p class="text-sm text-slate-500 mb-6">Compare the total macronutrients provided by the diets you've designed.</p>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <!-- Saved Diets List -->
+                <div class="lg:col-span-1 bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-semibold text-slate-700 mb-3 border-b pb-2">Saved Diets</h4>
+                    <div id="trackerMessage" class="text-sm p-3 mb-4 rounded-md bg-amber-50 text-amber-800 border border-amber-200">
+                        Animals Completed: <span id="savedCount" class="font-bold">0</span>. You must complete at least 3 animals (you can do more!). Please pick another animal from the dropdown to continue.
+                    </div>
+                    <ul id="savedDietsList" class="space-y-3">
+                        <!-- Saved items injected here -->
+                        <li id="emptySavedState" class="text-sm text-slate-400 italic text-center py-4">No diets saved yet.</li>
+                    </ul>
+                </div>
+                
+                <!-- Chart Area -->
+                <div class="lg:col-span-2 bg-white p-4 rounded-lg border border-slate-200 flex justify-center items-center">
+                    <canvas id="comparisonChart" class="w-full max-h-[400px]"></canvas>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Food Reference Modal -->
+    <div id="foodModal" class="fixed inset-0 bg-slate-900 bg-opacity-50 z-40 hidden flex justify-center items-center backdrop-blur-sm transition-opacity duration-300 opacity-0">
+        <div class="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[85vh] flex flex-col mx-4 transform scale-95 transition-transform duration-300" id="foodModalContent">
+            
+            <!-- Modal Header -->
+            <div class="flex justify-between items-center p-5 border-b border-slate-200">
+                <h2 class="text-xl font-bold text-slate-800">Food Master List Nutrition Guide</h2>
+                <button onclick="closeFoodModal()" class="text-slate-400 hover:text-slate-600 transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                </button>
+            </div>
+            
+            <!-- Modal Body (Scrollable) -->
+            <div class="p-5 overflow-y-auto">
+                <p class="text-sm text-slate-500 mb-4">Values represent the percentage (%) of the macronutrient in the given food item.</p>
+                <table class="w-full text-left border-collapse text-sm">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-700">
+                            <th class="p-2 border-b border-slate-300">Food Item</th>
+                            <th class="p-2 border-b border-slate-300 text-center">Typical Portion Size</th>
+                            <th class="p-2 border-b border-slate-300 text-center">Protein %</th>
+                            <th class="p-2 border-b border-slate-300 text-center">Fat %</th>
+                            <th class="p-2 border-b border-slate-300 text-center">Carbs %</th>
+                        </tr>
+                    </thead>
+                    <tbody id="referenceTableBody" class="divide-y divide-slate-100">
+                        <!-- Filled by JS -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Modal Footer -->
+            <div class="p-4 border-t border-slate-200 flex justify-end">
+                <button onclick="closeFoodModal()" class="bg-slate-200 hover:bg-slate-300 text-slate-800 px-4 py-2 rounded-lg font-medium transition-colors">Close</button>
+            </div>
         </div>
     </div>
 
-    <!-- Next Steps Summary Box -->
-    <div style="background-color: #2c3e50; color: #ffffff; border-radius: 6px; padding: 20px; margin-top: 30px; width: 100%; box-sizing: border-box;">
-        <h3 style="margin-top: 0; color: #ffffff; font-size: 18px;">Next Steps</h3>
-        <ol style="margin-bottom: 0; padding-left: 20px; color: #ecf0f1; line-height: 1.8;">
-            <li>Formulate and save your completed animal menu inside the interactive web tool above.</li>
-            <li>Ensure all total macromolecule calculations satisfy or exceed your chosen species' daily minimum requirements.</li>
-            <li>Submit your final diet calculations as directed in Canvas.</li>
-        </ol>
-    </div>
+<script>
+    // --- Data Sources ---
+    const animals = [
+        { id: 1, scientific: "Panthera leo", common: "Lion", protein: 1.32, fat: 0.50, carbs: 0 },
+        { id: 2, scientific: "Loxodonta africana", common: "African Elephant", protein: 4.41, fat: 1.10, carbs: 41.36 },
+        { id: 3, scientific: "Equus grevyi", common: "Grevy's Zebra", protein: 0.90, fat: 0.11, carbs: 5.40 },
+        { id: 4, scientific: "Diceros bicornis", common: "Black Rhinoceros", protein: 1.64, fat: 0.41, carbs: 15.38 },
+        { id: 5, scientific: "Papio papio", common: "Guinea Baboon", protein: 0.11, fat: 0.02, carbs: 0.16 },
+        { id: 6, scientific: "Atelerix frontalis", common: "Southern African Hedgehog", protein: 0.005, fat: 0.001, carbs: 0.0008 },
+        { id: 7, scientific: "Proteles cristata", common: "Aardwolf", protein: 0.055, fat: 0.125, carbs: 0 },
+        { id: 8, scientific: "Homo sapiens", common: "Human", protein: 0.22, fat: 0.08, carbs: 0.40 }
+    ];
 
-</div>
+    const foods = [
+        // Animal Matter
+        { name: "Beef", type: "Animal", portion: "1 kg", unitName: "kg", unitMassKg: 1.0, protein: 60.0, fat: 8.9, carbs: 0 },
+        { name: "Deer, white-tailed", type: "Animal", portion: "1 kg", unitName: "kg", unitMassKg: 1.0, protein: 80.7, fat: 6.3, carbs: 0 },
+        { name: "Mouse, domestic", type: "Animal", portion: "30 g (1 mouse)", unitName: "mouse", unitMassKg: 0.03, protein: 64.2, fat: 17.0, carbs: 0 },
+        { name: "Pig, domestic (partial)", type: "Animal", portion: "1 kg", unitName: "kg", unitMassKg: 1.0, protein: 50.7, fat: 33.2, carbs: 0 },
+        { name: "Rabbit, domestic", type: "Animal", portion: "1 kg (1 rabbit)", unitName: "rabbit", unitMassKg: 1.0, protein: 72.1, fat: 13.0, carbs: 0 },
+        { name: "Rat, domestic", type: "Animal", portion: "100 g (1 rat)", unitName: "rat", unitMassKg: 0.1, protein: 57.9, fat: 23.7, carbs: 0 },
+        { name: "Chicken (whole)", type: "Animal", portion: "2.5 kg (1 chicken)", unitName: "chicken", unitMassKg: 2.5, protein: 64.9, fat: 22.4, carbs: 0 },
+        { name: "Duck, mallard", type: "Animal", portion: "2.5 kg (1 duck)", unitName: "duck", unitMassKg: 2.5, protein: 63.1, fat: 26.4, carbs: 0 },
+        { name: "Quail, Japanese", type: "Animal", portion: "1.5 kg (1 quail)", unitName: "quail", unitMassKg: 1.5, protein: 71.5, fat: 31.9, carbs: 0 },
+        { name: "Lizard, anole", type: "Animal", portion: "10 g (1 lizard)", unitName: "lizard", unitMassKg: 0.01, protein: 67.4, fat: 6.2, carbs: 0 },
+        { name: "Frog, green", type: "Animal", portion: "10 g (1 frog)", unitName: "frog", unitMassKg: 0.01, protein: 71.2, fat: 10.2, carbs: 0 },
+        { name: "Toad, southern", type: "Animal", portion: "20 g (1 toad)", unitName: "toad", unitMassKg: 0.02, protein: 61.8, fat: 13.7, carbs: 0 },
+        { name: "Crickets", type: "Animal", portion: "10 g portion", unitName: "portion (10g)", unitMassKg: 0.01, protein: 21.3, fat: 6.0, carbs: 3.0 },
+        { name: "Mealworms", type: "Animal", portion: "10 g portion", unitName: "portion (10g)", unitMassKg: 0.01, protein: 20.3, fat: 12.7, carbs: 3.6 },
+        { name: "Superworms", type: "Animal", portion: "10 g portion", unitName: "portion (10g)", unitMassKg: 0.01, protein: 17.4, fat: 17.9, carbs: 5.8 },
+        { name: "Wax worms", type: "Animal", portion: "10 g portion", unitName: "portion (10g)", unitMassKg: 0.01, protein: 15.5, fat: 22.2, carbs: 2.5 },
+        { name: "Earthworms", type: "Animal", portion: "30 g portion", unitName: "portion (30g)", unitMassKg: 0.03, protein: 10.0, fat: 2.0, carbs: 2.0 },
+        
+        // Plant Matter
+        { name: "Alfalfa hay (dry)", type: "Plant", portion: "25 kg (1 bale)", unitName: "bale", unitMassKg: 25.0, protein: 19.0, fat: 2.6, carbs: 62.2 },
+        { name: "Orchard grass (dry)", type: "Plant", portion: "25 kg (1 bale)", unitName: "bale", unitMassKg: 25.0, protein: 13.0, fat: 4.4, carbs: 44.3 },
+        { name: "Grass hay (dry)", type: "Plant", portion: "25 kg (1 bale)", unitName: "bale", unitMassKg: 25.0, protein: 10.0, fat: 3.0, carbs: 49.2 },
+        { name: "Timothy hay (dry)", type: "Plant", portion: "25 kg (1 bale)", unitName: "bale", unitMassKg: 25.0, protein: 8.5, fat: 2.6, carbs: 54.6 },
+        { name: "Red clover hay (dry)", type: "Plant", portion: "25 kg (1 bale)", unitName: "bale", unitMassKg: 25.0, protein: 17.0, fat: 4.4, carbs: 44.5 },
+        { name: "Green leaf lettuce", type: "Plant", portion: "300 g (1 head)", unitName: "head", unitMassKg: 0.3, protein: 1.4, fat: 0.2, carbs: 2.9 },
+        { name: "Romaine lettuce", type: "Plant", portion: "500 g (1 head)", unitName: "head", unitMassKg: 0.5, protein: 2.1, fat: 0.3, carbs: 5.7 },
+        { name: "Cabbage", type: "Plant", portion: "1 kg (1 head)", unitName: "head", unitMassKg: 1.0, protein: 1.3, fat: 0.1, carbs: 6.0 },
+        { name: "Kale", type: "Plant", portion: "250 g (leaves/bunch)", unitName: "leaves (bunch)", unitMassKg: 0.25, protein: 2.9, fat: 1.5, carbs: 4.4 },
+        { name: "Dandelion greens", type: "Plant", portion: "200 g (bunch)", unitName: "bunch", unitMassKg: 0.2, protein: 2.7, fat: 0.7, carbs: 9.3 },
+        { name: "Turnip greens", type: "Plant", portion: "200 g (bunch)", unitName: "bunch", unitMassKg: 0.2, protein: 1.5, fat: 0.3, carbs: 7.1 },
+        { name: "Celery", type: "Plant", portion: "50 g (1 stalk)", unitName: "stalk", unitMassKg: 0.05, protein: 0.7, fat: 0.2, carbs: 3.0 },
+        { name: "Carrot", type: "Plant", portion: "60 g (1 root)", unitName: "root", unitMassKg: 0.06, protein: 3.9, fat: 0.1, carbs: 9.6 },
+        { name: "Bell pepper", type: "Plant", portion: "150 g (1 pepper)", unitName: "pepper", unitMassKg: 0.15, protein: 0.8, fat: 0.2, carbs: 4.6 },
+        { name: "Apple", type: "Plant", portion: "150 g (1 fruit)", unitName: "fruit", unitMassKg: 0.15, protein: 0.3, fat: 0.2, carbs: 13.7 },
+        { name: "Banana", type: "Plant", portion: "120 g (1 fruit)", unitName: "fruit", unitMassKg: 0.12, protein: 1.1, fat: 0.3, carbs: 23.0 },
+        { name: "Cantaloupe", type: "Plant", portion: "1 kg (1 melon)", unitName: "melon", unitMassKg: 1.0, protein: 0.8, fat: 0.2, carbs: 8.2 },
+        { name: "Grapes", type: "Plant", portion: "500 g (1 bunch)", unitName: "bunch", unitMassKg: 0.5, protein: 0.6, fat: 0.3, carbs: 17.1 },
+        { name: "Orange", type: "Plant", portion: "130 g (1 fruit)", unitName: "fruit", unitMassKg: 0.13, protein: 1.0, fat: 0.1, carbs: 11.9 },
+        { name: "Strawberries", type: "Plant", portion: "150 g (fresh cup)", unitName: "cup", unitMassKg: 0.15, protein: 6.7, fat: 0.3, carbs: 7.7 },
+        { name: "Avocado", type: "Plant", portion: "170 g (1 fruit)", unitName: "fruit", unitMassKg: 0.17, protein: 2.0, fat: 14.8, carbs: 8.6 }
+    ];
+
+    // --- State Variables ---
+    let currentAnimal = null;
+    let savedDiets = [];
+    let comparisonChartInstance = null;
+    let currentTotalP = 0;
+    let currentTotalF = 0;
+    let currentTotalC = 0;
+
+    // --- Initialization ---
+    window.onload = () => {
+        // Populate Species Dropdown
+        const select = document.getElementById('speciesSelect');
+        animals.forEach((animal, index) => {
+            let option = document.createElement('option');
+            option.value = index;
+            option.text = `${animal.common} (${animal.scientific})`;
+            select.appendChild(option);
+        });
+
+        // Populate Reference Modal Table
+        const refBody = document.getElementById('referenceTableBody');
+        
+        function renderFoodRows(typeLabel, typeFilter) {
+            refBody.innerHTML += `<tr><td colspan="5" class="p-2 bg-slate-200 font-bold text-slate-800">${typeLabel}</td></tr>`;
+            foods.filter(f => f.type === typeFilter).forEach(food => {
+                refBody.innerHTML += `
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="p-2 border-b border-slate-100 font-medium pl-4">${food.name}</td>
+                        <td class="p-2 border-b border-slate-100 text-center text-slate-500">${food.portion}</td>
+                        <td class="p-2 border-b border-slate-100 text-center">${food.protein.toFixed(1)}%</td>
+                        <td class="p-2 border-b border-slate-100 text-center">${food.fat.toFixed(1)}%</td>
+                        <td class="p-2 border-b border-slate-100 text-center">${food.carbs.toFixed(1)}%</td>
+                    </tr>
+                `;
+            });
+        }
+        
+        renderFoodRows("Animal Matter", "Animal");
+        renderFoodRows("Plant Matter", "Plant");
+
+        // Setup Chart
+        initChart();
+    };
+
+    // --- Toast Notification System ---
+    let toastTimeout;
+    function showToast(message, type = 'error') {
+        const toast = document.getElementById('toastMessage');
+        toast.innerText = message;
+        
+        // Style based on type
+        if (type === 'error') {
+            toast.className = 'fixed top-5 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg shadow-xl text-white font-medium z-50 transition-all duration-300 bg-red-500 opacity-100 pointer-events-auto top-8';
+        } else {
+            toast.className = 'fixed top-5 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-lg shadow-xl text-white font-medium z-50 transition-all duration-300 bg-emerald-500 opacity-100 pointer-events-auto top-8';
+        }
+
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+            toast.classList.remove('opacity-100', 'top-8', 'pointer-events-auto');
+            toast.classList.add('opacity-0', 'pointer-events-none');
+        }, 3000);
+    }
+
+    // --- Modal Logic ---
+    function openFoodModal() {
+        const modal = document.getElementById('foodModal');
+        const content = document.getElementById('foodModalContent');
+        modal.classList.remove('hidden');
+        // trigger reflow
+        void modal.offsetWidth;
+        modal.classList.remove('opacity-0');
+        content.classList.remove('scale-95');
+        content.classList.add('scale-100');
+    }
+
+    function closeFoodModal() {
+        const modal = document.getElementById('foodModal');
+        const content = document.getElementById('foodModalContent');
+        modal.classList.add('opacity-0');
+        content.classList.remove('scale-100');
+        content.classList.add('scale-95');
+        setTimeout(() => {
+            modal.classList.add('hidden');
+        }, 300);
+    }
+
+    // --- Diet Builder Logic ---
+    document.getElementById('speciesSelect').addEventListener('change', function() {
+        currentAnimal = animals[this.value];
+        
+        // Show sections
+        document.getElementById('targetDisplay').classList.remove('hidden');
+        document.getElementById('dietBuilderSection').classList.remove('hidden');
+
+        // Reset Table
+        document.getElementById('dietBody').innerHTML = '';
+        addFoodRow();
+
+        // Update Target Display
+        document.getElementById('targetProtein').innerText = currentAnimal.protein.toFixed(3);
+        document.getElementById('targetFat').innerText = currentAnimal.fat.toFixed(3);
+        document.getElementById('targetCarbs').innerText = currentAnimal.carbs.toFixed(3);
+        
+        calculateTotals();
+    });
+
+    function getFoodOptionsHTML() {
+        let options = '<option value="" disabled selected>-- Select Food --</option>';
+        
+        let animalOptions = '<optgroup label="Animal Matter">';
+        let plantOptions = '<optgroup label="Plant Matter">';
+        
+        foods.forEach((food, index) => {
+            if(food.type === "Animal") {
+                animalOptions += `<option value="${index}">${food.name}</option>`;
+            } else {
+                plantOptions += `<option value="${index}">${food.name}</option>`;
+            }
+        });
+        
+        animalOptions += '</optgroup>';
+        plantOptions += '</optgroup>';
+        
+        return options + animalOptions + plantOptions;
+    }
+
+    function addFoodRow() {
+        const tbody = document.getElementById('dietBody');
+        const tr = document.createElement('tr');
+        tr.className = "hover:bg-slate-50 transition-colors group";
+        
+        tr.innerHTML = `
+            <td class="p-2 border-b border-slate-200">
+                <select class="food-select w-full p-2 border border-slate-300 rounded focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white text-sm" onchange="updateRow(this)">
+                    ${getFoodOptionsHTML()}
+                </select>
+            </td>
+            <td class="p-2 border-b border-slate-200">
+                <div class="flex items-center space-x-2">
+                    <input type="number" step="0.01" min="0" class="food-amount w-20 p-2 border border-slate-300 rounded focus:ring-2 focus:ring-emerald-500 focus:outline-none bg-white text-sm" placeholder="0" oninput="updateRow(this)">
+                    <span class="food-unit text-sm text-slate-500 font-medium min-w-[50px]"></span>
+                </div>
+            </td>
+            <td class="p-2 border-b border-slate-200"><input type="text" class="food-protein w-full bg-transparent text-center font-mono text-sm border-none outline-none" readonly value="0.000"></td>
+            <td class="p-2 border-b border-slate-200"><input type="text" class="food-fat w-full bg-transparent text-center font-mono text-sm border-none outline-none" readonly value="0.000"></td>
+            <td class="p-2 border-b border-slate-200"><input type="text" class="food-carbs w-full bg-transparent text-center font-mono text-sm border-none outline-none" readonly value="0.000"></td>
+            <td class="p-2 border-b border-slate-200 text-center">
+                <button class="text-slate-400 hover:text-red-500 transition-colors p-1" onclick="deleteRow(this)" title="Remove Item">
+                    <svg class="w-5 h-5 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path></svg>
+                </button>
+            </td>
+        `;
+        tbody.appendChild(tr);
+    }
+
+    function deleteRow(btn) {
+        const tbody = document.getElementById('dietBody');
+        if(tbody.children.length > 1) {
+            btn.closest('tr').remove();
+            calculateTotals();
+        } else {
+            showToast("You must have at least one row in the diet builder.");
+        }
+    }
+
+    function updateRow(element) {
+        const row = element.closest('tr');
+        const foodSelect = row.querySelector('.food-select');
+        const amountInput = row.querySelector('.food-amount');
+        const unitLabel = row.querySelector('.food-unit');
+        
+        const pField = row.querySelector('.food-protein');
+        const fField = row.querySelector('.food-fat');
+        const cField = row.querySelector('.food-carbs');
+
+        if (foodSelect.value !== "") {
+            const food = foods[foodSelect.value];
+            unitLabel.innerText = food.unitName;
+            
+            if (amountInput.value !== "") {
+                const amount = parseFloat(amountInput.value) || 0;
+                
+                // Formula: macros (kg) = (quantity * unit_mass_in_kg) * (macro_percentage / 100)
+                const totalMassKg = amount * food.unitMassKg;
+                pField.value = (totalMassKg * (food.protein / 100)).toFixed(3);
+                fField.value = (totalMassKg * (food.fat / 100)).toFixed(3);
+                cField.value = (totalMassKg * (food.carbs / 100)).toFixed(3);
+            } else {
+                pField.value = "0.000";
+                fField.value = "0.000";
+                cField.value = "0.000";
+            }
+        } else {
+            unitLabel.innerText = "";
+            pField.value = "0.000";
+            fField.value = "0.000";
+            cField.value = "0.000";
+        }
+        
+        calculateTotals();
+    }
+
+    function calculateTotals() {
+        let totalP = 0, totalF = 0, totalC = 0;
+        
+        document.querySelectorAll('#dietBody tr').forEach(row => {
+            totalP += parseFloat(row.querySelector('.food-protein').value) || 0;
+            totalF += parseFloat(row.querySelector('.food-fat').value) || 0;
+            totalC += parseFloat(row.querySelector('.food-carbs').value) || 0;
+        });
+
+        currentTotalP = totalP;
+        currentTotalF = totalF;
+        currentTotalC = totalC;
+
+        const tP_el = document.getElementById('totalProtein');
+        const tF_el = document.getElementById('totalFat');
+        const tC_el = document.getElementById('totalCarbs');
+
+        tP_el.innerText = totalP.toFixed(3);
+        tF_el.innerText = totalF.toFixed(3);
+        tC_el.innerText = totalC.toFixed(3);
+
+        if (currentAnimal) {
+            updateGoalColor(tP_el, totalP, currentAnimal.protein);
+            updateGoalColor(tF_el, totalF, currentAnimal.fat);
+            updateGoalColor(tC_el, totalC, currentAnimal.carbs);
+        }
+    }
+
+    function updateGoalColor(element, total, required) {
+        element.classList.remove('text-amber-500', 'text-emerald-600');
+        if (total >= required) {
+            element.classList.add('text-emerald-600'); // Green if met
+        } else {
+            element.classList.add('text-amber-500'); // Orange if not met
+        }
+    }
+
+    // --- Save & Chart Logic ---
+    function saveCurrentDiet() {
+        if (!currentAnimal) {
+            showToast("Please select an animal first.");
+            return;
+        }
+
+        // Check if values are zero
+        if(currentTotalP === 0 && currentTotalF === 0 && currentTotalC === 0) {
+            showToast("Please add food to the diet before saving.");
+            return;
+        }
+
+        // Save data
+        const dietData = {
+            animalName: currentAnimal.common,
+            protein: currentTotalP,
+            fat: currentTotalF,
+            carbs: currentTotalC
+        };
+        
+        savedDiets.push(dietData);
+        
+        // Show success
+        showToast(`${currentAnimal.common} diet saved successfully!`, 'success');
+        
+        // Show comparison section
+        document.getElementById('savedDietsSection').classList.remove('hidden');
+        
+        // Update UI
+        updateSavedDietsList();
+        updateChartData();
+
+        // Reset UI for next
+        document.getElementById('speciesSelect').value = "";
+        currentAnimal = null;
+        document.getElementById('targetDisplay').classList.add('hidden');
+        document.getElementById('dietBuilderSection').classList.add('hidden');
+    }
+
+    function updateSavedDietsList() {
+        const list = document.getElementById('savedDietsList');
+        const emptyState = document.getElementById('emptySavedState');
+        const trackerMessage = document.getElementById('trackerMessage');
+        
+        // Update Tracker Message
+        if (savedDiets.length >= 3) {
+            trackerMessage.className = "text-sm p-3 mb-4 rounded-md bg-emerald-50 text-emerald-800 border border-emerald-200";
+            trackerMessage.innerHTML = `Animals Completed: <span id="savedCount" class="font-bold">${savedDiets.length}</span>. Great job! You have met the minimum requirement. You can continue to do more if you'd like.`;
+        } else {
+            trackerMessage.className = "text-sm p-3 mb-4 rounded-md bg-amber-50 text-amber-800 border border-amber-200";
+            trackerMessage.innerHTML = `Animals Completed: <span id="savedCount" class="font-bold">${savedDiets.length}</span>. You must complete at least 3 animals (you can do more!). Please pick another animal from the dropdown to continue.`;
+        }
+        
+        if (savedDiets.length > 0 && emptyState) {
+            emptyState.style.display = 'none';
+        }
+
+        list.innerHTML = '';
+        savedDiets.forEach((diet, index) => {
+            list.innerHTML += `
+                <li class="bg-white p-3 rounded border border-slate-200 shadow-sm flex items-center">
+                    <div class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold mr-3">
+                        ${index + 1}
+                    </div>
+                    <div>
+                        <p class="font-bold text-slate-700">${diet.animalName}</p>
+                        <p class="text-xs text-slate-500">P: ${diet.protein.toFixed(2)} | F: ${diet.fat.toFixed(2)} | C: ${diet.carbs.toFixed(2)}</p>
+                    </div>
+                </li>
+            `;
+        });
+    }
+
+    function initChart() {
+        const ctx = document.getElementById('comparisonChart').getContext('2d');
+        comparisonChartInstance = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [], // Animal names
+                datasets: [
+                    {
+                        label: 'Total Protein (kg)',
+                        backgroundColor: '#3b82f6', // blue
+                        data: []
+                    },
+                    {
+                        label: 'Total Fat (kg)',
+                        backgroundColor: '#f59e0b', // amber
+                        data: []
+                    },
+                    {
+                        label: 'Total Carbs (kg)',
+                        backgroundColor: '#10b981', // emerald
+                        data: []
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Amount in Kilograms (kg)'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.parsed.y.toFixed(3) + ' kg';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    function updateChartData() {
+        if (!comparisonChartInstance) return;
+
+        const labels = savedDiets.map(d => d.animalName);
+        const dataP = savedDiets.map(d => d.protein);
+        const dataF = savedDiets.map(d => d.fat);
+        const dataC = savedDiets.map(d => d.carbs);
+
+        comparisonChartInstance.data.labels = labels;
+        comparisonChartInstance.data.datasets[0].data = dataP;
+        comparisonChartInstance.data.datasets[1].data = dataF;
+        comparisonChartInstance.data.datasets[2].data = dataC;
+
+        comparisonChartInstance.update();
+    }
+
+</script>
+</body>
+</html>
